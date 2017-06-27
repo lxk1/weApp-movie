@@ -1,0 +1,10 @@
+/* pages/login/login.wxss */
+page{
+  background: #f4f4f4;
+}
+.login{
+  width:50%;
+  margin-top: 80%;
+  background-color: #314C6D;
+  color: #fff;
+}

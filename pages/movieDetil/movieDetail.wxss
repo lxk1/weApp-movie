@@ -1,0 +1,44 @@
+/* pages/movieDetil/movieDetail.wxss */
+page{
+  background: #f4f4f4;
+  padding:20px;
+  box-sizing:border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container view{
+  margin-top: 10px;
+}
+.photos{
+  text-align: center;
+}
+.title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.genres text{
+  font-size: 16px;
+} 
+.casts text{
+  font-size: 16px;
+} 
+.directors text{
+  font-size: 16px;
+}
+.rating{
+  color: orange;
+}
+.countries{
+  color: #666;
+  font-size: 16px;
+}
+.summary{
+  color: #666;
+  font-size: 16px;
+}
+.year{
+  color: #666;
+  font-size: 16px;
+}

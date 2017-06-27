@@ -1,0 +1,23 @@
+<!--pages/movies/movies.wxml-->
+<view class="container" wx:if="{{inTheatersList.length>0}}">
+  <!--<view class="remind-box" wx:if="{{inTheatersList.length==0}}">
+      <image class="remind-img" src="/images/loading.gif"></image>
+  </view>
+  <block wx:else>-->
+    <view class="search">
+      <input class="search-content" type="text" placeholder="请输入电影名、演员名、导演名等" confirm-type="search" value="{{input}}" bindconfirm="search"/>
+    </view>
+    <view class="in-theaters" >
+      <text class="list-title" style="display:block;margin-bottom: 10px;">正在热映</text>
+      <view class="flex-wrp">
+        <view class="flex-item" wx:for="{{inTheatersList}}" bindtap="showDetail" id="{{item.id}}">
+          <image src="{{item.images.large}}" style="width:100%;" mode="aspectFill"></image>
+          <text class="movie-title">{{item.title}}</text>
+          <text class="movie-star">{{item.genres[0]}}  {{item.genres[1]}}  {{item.genres[2]}}</text>
+          <text class="movie-rating">评分：{{item.rating.average}}</text>
+          <text>上映年份：{{item.year}}</text>
+        </view>
+      </view>
+    </view>
+  <!--</block>-->
+</view>

@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/movies/movies",
+    "pages/movieDetil/movieDetail",
+    "pages/searchResult/searchResult",
+    "pages/top/top"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#314C6D",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "热映"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "Top250"
+      }
+    ],
+    "selectedColor": "#333",
+    "backgroundColor": "#fff"
+  }
+}

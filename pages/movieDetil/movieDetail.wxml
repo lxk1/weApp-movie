@@ -1,0 +1,23 @@
+<!--pages/movieDetil/movieDetail.wxml-->
+<view class="container">
+  <view class="photos">
+      <image src="{{movieData.images.large}}" mode="widthFix"></image>
+  </view>
+  <view class="title">片名：  {{movieData.title}}</view>
+  <view class="genres">
+    <text>影片类型:  </text>
+    <text wx:for="{{movieData.genres}}">{{item}}  </text>
+  </view>
+  <view class="casts">
+    <text>主演:  </text>
+      <text wx:for="{{movieData.casts}}">{{item.name}}  </text>
+  </view>
+  <view class="directors">
+    <text>导演:  </text>
+    <text wx:for="{{movieData.directors}}">{{item.name}}  </text>
+  </view>
+  <view class="countries">国家：{{movieData.countries}}</view>
+  <view class="year"> 年份：{{movieData.year}}</view>
+  <view class="rating">评分：{{movieData.rating.average}}</view>
+  <view class="summary">简介:{{movieData.summary}}</view>
+</view>
